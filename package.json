@@ -2,7 +2,7 @@
   "name": "megogo-test-task",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://nadiakhoptiuk/megogo-test-task/",
+  "homepage": "https://nadiakhoptiuk.github.io/megogo-test-task/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /megogo-test-task/"
