@@ -1,0 +1,38 @@
+.gifts {
+  height: 100vh;
+  padding-top: 14vh;
+
+  background-image: linear-gradient(
+      to top,
+      #101010 0%,
+      #101010 8%,
+      rgba(16, 16, 16, 0) 50%,
+      rgba(16, 16, 16, 0) 100%
+    ),
+    url('..//..//assets/images/gifts.webp');
+
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 342px 342px;
+
+  @include retina2 {
+    background-image: linear-gradient(
+        to top,
+        #101010 0%,
+        #101010 8%,
+        rgba(16, 16, 16, 0) 50%,
+        rgba(16, 16, 16, 0) 100%
+      ),
+      url('..//..//assets/images/gifts@2x.webp');
+  }
+}
+
+.gifts__title {
+  margin-bottom: 0.94rem;
+
+  @extend %title;
+}
+
+.gifts__paragraph {
+  @extend %small-paragraph;
+}

@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+
+  background-color: transparent;
+  z-index: 2;
+}
+
+.header__container {
+  padding: 0 15px;
+}
+
+.header__menu-button {
+  width: 16px;
+  height: 12px;
+}
+
+.header__menu-icon {
+  display: block;
+}

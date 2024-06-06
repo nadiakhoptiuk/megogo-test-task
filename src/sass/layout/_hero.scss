@@ -1,18 +1,38 @@
 .hero {
-  padding: 12.5rem 0;
+  height: 100vh;
+  padding: 0 0 1.56rem 0;
+  position: relative;
+
+  background-image: url('..//..//assets/images/hero.webp');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  @include centeredFlex(column, center, center);
+
+  @include retina2 {
+    background-image: url('..//..//assets/images/hero@2x.webp');
+  }
 }
 
 .hero__title {
   margin-bottom: 0.6rem;
 
-  @extend %title;
+  font-family: 'SF UI Display', sans-serif;
+  @include font(700, 1.875rem, 1.2, _, _);
 
   color: $textColorPrimary;
 }
 
 .hero__paragraph {
-  @extend %main-paragraph;
+  @extend %big-paragraph;
 
   color: $textColorPrimary;
   opacity: 0.8;
+}
+
+.hero__arrow-icon {
+  position: absolute;
+  bottom: 1.56rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

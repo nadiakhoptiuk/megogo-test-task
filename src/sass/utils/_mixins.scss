@@ -12,7 +12,7 @@
   }
 }
 
-@mixin font($fw, $fs, $lh, $ls, $tt) {
+@mixin font($fw, $fs, $lh, $ls: 0, $tt: none) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
@@ -20,8 +20,9 @@
   text-transform: $tt;
 }
 
-@mixin centeredFlex($justify: center, $align: center) {
+@mixin centeredFlex($direction: row, $justify: center, $align: center) {
   display: flex;
+  flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
 }

@@ -1,0 +1,35 @@
+.benefits {
+  height: 100vh;
+  padding: 13vh 0 19.5vh 0;
+}
+
+.benefits__title {
+  margin-bottom: 1.875rem;
+
+  @extend %title;
+}
+
+.benefits__list {
+  width: 100%;
+  margin-bottom: 3.25rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.5rem;
+  column-gap: 1.25rem;
+}
+
+.item__content--bold {
+  display: block;
+  @include font(700, 1.25rem, 1.1);
+}
+
+.item__content--thin {
+  @extend %small-paragraph;
+}
+
+.benefits__button {
+  @extend %cta-button;
+
+  @include font(_, 0.81rem, 1.1, _, uppercase);
+}
