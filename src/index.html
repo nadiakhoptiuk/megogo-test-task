@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Передплати на MEGOGO.NET</title>
+    <meta
+      name="description"
+      content="Сайт для підключення передплати на сервісі MEGOGO.NET"
+    />
+
+    <link rel="icon" sizes="48x48" href="../src/assets/meta/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../src/assets/meta/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/assets/meta/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../src/assets/meta/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../src/assets/meta/site.webmanifest" />
+
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script type="module" src="./index.js"></script>
   </head>
 
@@ -12,11 +42,39 @@
     <include src="./partials/header.html"></include>
 
     <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/movies-offline.html"></include>
-      <include src="./partials/prepayment.html"></include>
-      <include src="./partials/gifts.html"></include>
-      <include src="./partials/benefits.html"></include>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <include src="./partials/hero.html"></include>
+          </div>
+
+          <div class="swiper-slide">
+            <include src="./partials/movies-offline.html"></include>
+          </div>
+
+          <div class="swiper-slide">
+            <include src="./partials/prepayment.html"></include>
+          </div>
+
+          <div class="swiper-slide">
+            <include src="./partials/gifts.html"></include>
+          </div>
+
+          <div class="swiper-slide">
+            <include src="./partials/benefits.html"></include>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        mousewheel: true,
+      });
+    </script>
   </body>
 </html>
