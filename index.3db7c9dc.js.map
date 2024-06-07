@@ -1,0 +1,1 @@
+{"mappings":"AAAe,IAAIA,OAAO,UAAW,CACnCC,UAAW,WACXC,cAAe,EACfC,YAAY","sources":["src/index.js"],"sourcesContent":["const swiper = new Swiper('.swiper', {\n  direction: 'vertical',\n  slidesPerView: 1,\n  mousewheel: true,\n});\n"],"names":["Swiper","direction","slidesPerView","mousewheel"],"version":3,"file":"index.3db7c9dc.js.map"}
