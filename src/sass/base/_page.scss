@@ -1,4 +1,10 @@
+html,
+main {
+  height: 100%;
+}
+
 .page {
+  height: 100%;
   font-family: 'SF UI Display', sans-serif;
   background-color: $bgColor;
   color: $textColorPrimary;
